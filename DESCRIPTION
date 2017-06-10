@@ -1,0 +1,13 @@
+Package: FatInjUSA
+Version: 0.1
+Date: 2017-06-10
+Title: Fatal injuries within the USA
+Description: The total number of injuries per month and year within the USA can be summarized. And the location of the fatal injuries per year per state can be mapped.
+Author: Ferrie Heskes
+Maintainer: Ferrie Heskes <ferrie.heskes@casema.nl>
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+License: GPL-3
+Import: dplyr,readr,tidyr,maps,graphics

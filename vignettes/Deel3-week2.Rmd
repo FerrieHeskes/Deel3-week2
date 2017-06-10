@@ -1,0 +1,33 @@
+---
+title: "Fatal car injuries within the USA"
+author: "Ferrie Heskes"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Fatal car injuries within the USA}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This package contains several functions which can be used to get insight of the fatal injuries within the USA, e.g. :
+
+- gives a map of the fatal injuries per state per year
+- gives the total injuries within the USA per year per month  
+
+It uses the following external libraries:
+
+dplyr
+readr
+tidyr
+maps
+graphics
+
+## Figures
+
+Per state per year a map can be made with all the fatal injuries per year. This by executing e.g. fars_map_state(10,2013) with inputparameters statenumber and year.
+
+## More Examples
+
+Besides showing maps with fatal injuries per state also the total amount of fatal injuries per month per year can be shown, e.g. via 'fars_summarize_years(c(2013,2014))'.
+
+
