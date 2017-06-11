@@ -10,4 +10,4 @@ Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
 License: GPL-3
-Import: dplyr,readr,tidyr,maps,graphics
+Imports: dplyr,readr,tidyr,maps,graphics,testthat

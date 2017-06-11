@@ -19,8 +19,8 @@ This function reads a (compressed) csv file with data of fatal injuries in motor
 This function will give a message "file <filename> does not exist" when the input file does not exist
 }
 \examples{
-fars_read("data/accident_2013.csv")
-fars_read("data/accident_2013.csv.bz2")
-fars_read("data/accident_2013.csv.zip")
+fars_read("accident_2013.csv")
+fars_read("accident_2013.csv.bz2")
+fars_read("accident_2013.csv.zip")
 
 }

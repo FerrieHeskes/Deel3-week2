@@ -6,13 +6,16 @@
 #' 
 #' @return This function returns the input data in a data frame table
 #'
+#' @importFrom readr read_csv
+#' @importFrom dplyr tbl_df
+#' 
 #' @note 
 #' This function will give a message "file <filename> does not exist" when the input file does not exist
 #'
 #' @examples
-#' fars_read("data/accident_2013.csv")
-#' fars_read("data/accident_2013.csv.bz2")
-#' fars_read("data/accident_2013.csv.zip")
+#' fars_read("accident_2013.csv")
+#' fars_read("accident_2013.csv.bz2")
+#' fars_read("accident_2013.csv.zip")
 #'
 fars_read <- function(filename) {
         if(!file.exists(filename))
@@ -50,6 +53,9 @@ make_filename <- function(year) {
 #' 
 #' @return This function returns a list with repeating the month and per month the year 
 #'
+#' @importFrom dplyr mutate
+#' @importFrom dplyr select
+#' 
 #' @note 
 #' This function will give a message "invalid year: <year>" when the input file based on the input cannot be processed
 #'
@@ -81,6 +87,11 @@ fars_read_years <- function(years) {
 #' 
 #' @return This function returns a list with per month the total casualties per (input) year 
 #'
+#' @importFrom dplyr bind_rows
+#' @importFrom dplyr group_by
+#' @importFrom dplyr summarize
+#' @importFrom tidyr spread
+#' 
 #' @examples
 #' fars_summarize_years(2013)
 #' fars_summarize_years("2014")
@@ -105,6 +116,10 @@ fars_summarize_years <- function(years) {
 #' @param year An integer or character string denoting a year
 #' 
 #' @return This function shows a graphical representation of the state and the locations within a state where fatal injuries occured 
+#'
+#' @importFrom dplyr filter
+#' @importFrom maps map
+#' @importFrom graphics points
 #'
 #' @note 
 #' This function will give a message "invalid STATE number: <state.num>" when the statenumber cannot be found within the data file based on the input of the year and will stop processing
