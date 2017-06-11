@@ -17,7 +17,9 @@ This function returns the character string "accident_<input as numeric>.csv.bz2"
 This function creates, with the given input, the name of the data file with fatal injuries in motor vehicle traffic crashes in the USA.
 }
 \examples{
+\dontrun{
 make_filename(2013)
 make_filename("2014")
+}
 
 }

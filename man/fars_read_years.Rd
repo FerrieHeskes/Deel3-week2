@@ -20,8 +20,10 @@ all the months (via the MONTH field) contained in the data file with the year(s)
 This function will give a message "invalid year: <year>" when the input file based on the input cannot be processed
 }
 \examples{
+\dontrun{
 fars_read_years(2013)
 fars_read_years("2014")
 fars_read_years(c(2013,2014))
+}
 
 }

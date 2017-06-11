@@ -23,8 +23,9 @@ This function will give a message "invalid STATE number: <state.num>" when the s
 This function will give a message "no accidents to plot" when no fatal injuries took place in a certain state in a certain year
 }
 \examples{
-fars_map_state(1,2013)
+\dontrun{
+fars_map_state(10,2013)
 fars_map_state("1",2013)
 fars_map_state("1","2013")
-
+}
 }

@@ -2,16 +2,23 @@
 
 The goal of FatInjUSA is to give insight of the number and location of fatal injuries within the USA.
 
-## Example
+## Installation
 
-This is a basic example which shows you how to solve a common problem:
+You can install FatInjUSA from github with:
+
 
 ``` r
-## To summarize the total number of injuries per month and year within the USA
-getwd()
-dir()
-fars_summarize_years(c(2013,2014))
+# install.packages("devtools")
+devtools::install_github("FerrieHeskes/Deel3-week2")
+```
 
-## To show the location of the fatal injuries per year per state
+## Examples
+
+``` r
+## basic example code
+# To get a map on which the fatal injuries per state (state 10) per year (year 2013) are plotted
 fars_map_state(10,2013)
+
+# To get an overview per month per year (years 2013 and 2014) of the total fatal injuries within the USA 
+fars_summarize_years(c(2013,2014))
 ```

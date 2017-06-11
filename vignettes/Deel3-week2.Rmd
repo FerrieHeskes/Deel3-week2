@@ -24,10 +24,10 @@ graphics
 
 ## Figures
 
-Per state per year a map can be made with all the fatal injuries per year. This by executing e.g. fars_map_state(10,2013) with inputparameters statenumber and year.
+Per state per year a map can be made with all the fatal injuries per year. 
 
 ## More Examples
 
-Besides showing maps with fatal injuries per state also the total amount of fatal injuries per month per year can be shown, e.g. via 'fars_summarize_years(c(2013,2014))'.
+Besides showing maps with fatal injuries per state also the total amount of fatal injuries per month per year can be shown.
 
 

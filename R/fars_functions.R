@@ -13,9 +13,11 @@
 #' This function will give a message "file <filename> does not exist" when the input file does not exist
 #'
 #' @examples
-#' fars_read("accident_2013.csv")
-#' fars_read("accident_2013.csv.bz2")
-#' fars_read("accident_2013.csv.zip")
+#' \dontrun{
+#' fars_read("data/accident_2013.csv")
+#' fars_read("data/accident_2013.csv.bz2")
+#' fars_read("data/accident_2013.csv.zip")
+#' }
 #'
 fars_read <- function(filename) {
         if(!file.exists(filename))
@@ -36,8 +38,10 @@ fars_read <- function(filename) {
 #'         with <input as numeric> the given input converted to numeric
 #'
 #' @examples
+#' \dontrun{
 #' make_filename(2013)
 #' make_filename("2014")
+#' }
 #'
 make_filename <- function(year) {
         year <- as.integer(year)
@@ -60,9 +64,11 @@ make_filename <- function(year) {
 #' This function will give a message "invalid year: <year>" when the input file based on the input cannot be processed
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(2013)
 #' fars_read_years("2014")
 #' fars_read_years(c(2013,2014))
+#' }
 #'
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -93,9 +99,11 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #' 
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(2013)
 #' fars_summarize_years("2014")
 #' fars_summarize_years(c(2013,2014))
+#' }
 #'
 #' @export
 #'
@@ -126,10 +134,11 @@ fars_summarize_years <- function(years) {
 #' This function will give a message "no accidents to plot" when no fatal injuries took place in a certain state in a certain year
 #'
 #' @examples
-#' fars_map_state(1,2013)
+#' \dontrun{
+#' fars_map_state(10,2013)
 #' fars_map_state("1",2013)
 #' fars_map_state("1","2013")
-#'
+#' }
 #' @export
 #'
 fars_map_state <- function(state.num, year) {

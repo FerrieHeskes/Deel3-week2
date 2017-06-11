@@ -17,8 +17,10 @@ This function uses the data file with fatal injuries in motor vehicle traffic cr
 of fatal injuries per month/year.
 }
 \examples{
+\dontrun{
 fars_summarize_years(2013)
 fars_summarize_years("2014")
 fars_summarize_years(c(2013,2014))
+}
 
 }
