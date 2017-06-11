@@ -22,3 +22,5 @@ fars_map_state(10,2013)
 # To get an overview per month per year (years 2013 and 2014) of the total fatal injuries within the USA 
 fars_summarize_years(c(2013,2014))
 ```
+
+[![Build Status](https://travis-ci.org/FerrieHeskes/Deel3-week2.svg?branch=master)](https://travis-ci.org/FerrieHeskes/Deel3-week2)
